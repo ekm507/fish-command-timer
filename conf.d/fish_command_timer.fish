@@ -194,7 +194,7 @@ function fish_command_timer_compute_cmd_duration_str
      end
     set num_millis_pretty (printf '%03d' $num_millis)
   end
-  set cmd_duration_str {$cmd_duration_str}{$num_secs}s{$num_millis_pretty}
+  set cmd_duration_str {$cmd_duration_str}{$num_secs}(set_color -o magenta)s(set_color normal)(set_color $fish_command_timer_color){$num_millis_pretty}
   echo $cmd_duration_str
 end
 

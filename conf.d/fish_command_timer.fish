@@ -70,7 +70,7 @@ end
 #
 # If empty, disables printing of current time.
 if not set -q fish_command_timer_time_format
-  set fish_command_timer_time_format '%b %d %I:%M%p'
+  set fish_command_timer_time_format '%I:%M%p'
 end
 
 # Whether to print command timings up to millisecond precision.
